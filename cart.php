@@ -145,7 +145,7 @@ include './theme/navbar.php'
                             <h5>Total</h5>
                             <h5>Rs. 80,979</h5>
                         </div>
-                        <button onclick="document.location='checkoutnew.php'" class="btn btn-block btn-primary font-weight-bold my-3 py-3">Proceed To Checkout</a></button>
+                        <button onclick="document.location='chechkout.php'" class="btn btn-block btn-primary font-weight-bold my-3 py-3">Proceed To Checkout</a></button>
                     </div>
                 </div>
             </div>

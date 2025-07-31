@@ -19,13 +19,13 @@
     ?>
         <section>
             <div class = "image">
-               <img src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png">
+               <img src="./img/about.jpg">
             </div>
 
             <div class = "content">
-                <h2>About Us</h2>
+                <h2 class="text-white">About Us</h2>
                 <span><!-- line here --></span>
-                <p>OUR PLATFORM HERE IS AN ONLINE WEB-BASED APPLICATION WITH AN AIM TO SELL ELECTRONIC GADGETS/PRODUCTS ONLINE.<br>
+                <p style="color: white;">OUR PLATFORM HERE IS AN ONLINE WEB-BASED APPLICATION WITH AN AIM TO SELL ELECTRONIC GADGETS/PRODUCTS ONLINE.<br>
             ARE ALWAYS HERE TO PROVIDE QUALITY PRODUCT AND SERVICE TO OUR CUSTOMER<br></p>
                 <ul class = "links">
                     <li><a href = "#">quality products</a></li>

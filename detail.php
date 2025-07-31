@@ -79,7 +79,7 @@
                             <small class="fas fa-star-half-alt"></small>
                             <small class="far fa-star"></small>
                         </div>
-                        <small class="pt-1">150+ Reviews</small>
+                        <small class="pt-1">1 Reviews</small>
                     </div>
                     <hr>
                     <h3 class="font-weight-semi-bold mb-4 a-size">Rs. 25,990</h3>
@@ -150,7 +150,7 @@ Everyone’s ears are unique. But how we listen hasn’t been—until now. New Q
                     <div class="nav nav-tabs mb-4">
                         <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">Description</a>
                         <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">Information</a>
-                        <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-3">Reviews (150+)</a>
+                        <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-3">Reviews (1)</a>
                     </div>
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="tab-pane-1">
@@ -219,7 +219,7 @@ Everyone’s ears are unique. But how we listen hasn’t been—until now. New Q
                                 </div>
                                 <div class="col-md-6">
                                     <h4 class="mb-4">Leave a review</h4>
-                                    <small>Your email address will not be published. Required fields are marked *</small>
+                                    <small>Required fields are marked *</small>
                                     <div class="d-flex my-3">
                                         <p class="mb-0 mr-2">Your Rating * :</p>
                                         <div class="text-primary">
@@ -270,7 +270,6 @@ Everyone’s ears are unique. But how we listen hasn’t been—until now. New Q
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

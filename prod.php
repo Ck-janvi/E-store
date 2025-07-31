@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -144,183 +146,61 @@ include './theme/navbar.php';
                                 <button class="btn btn-sm btn-light"><i class="fa fa-th-large"></i></button>
                                 <button class="btn btn-sm btn-light ml-2"><i class="fa fa-bars"></i></button>
                             </div>
+                            <form method="get">
                             <div class="ml-2">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Sorting</button>
                                     <div class="dropdown-menu dropdown-menu-right">
-                                        <a class="dropdown-item" href="#">Latest</a>
-                                        <a class="dropdown-item" href="#">Popularity</a>
-                                        <a class="dropdown-item" href="#">Best Rating</a>
+                                        <a class="dropdown-item" href="#" value="latest">Latest</a>
+                                        <a class="dropdown-item" href="#" value="low">Price: Low to High</a>
+                                        <a class="dropdown-item" href="#" value="high">Price: High to Low</a>
                                     </div>
                                 </div>
                             </div>
+                            </form>
                         </div>
                     </div>
+                    <?php
+                        $host= "localhost";
+                        $user="root";
+                        $password="";
+                        $database="db_admin";
+                        $connection=mysqli_connect($host,$user,$password,$database);
+
+                        //$query = "SELECT * FROM `product_tbl`";
+                        $query=("SELECT * FROM product_tbl A
+                        left join product_detail_tbl B on A.product_id=B.product_id");
+                        $productselect = mysqli_query($connection, $query);
+
+                        while($productrow = mysqli_fetch_array($productselect))
+                        {
+
+                    ?>
                     <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             
-                            <div class="product-img position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="img/earbud1.jpg" alt="">
+                        <div class="product-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="./img/<?php echo $productrow['image_part']?>"  alt="">
                     </div>
                     <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="detail.php">Samsung Galaxy Buds </a>
+                        <a class="h6 text-decoration-none text-truncate" href="prod_detail.php?pid=<?php echo $productrow['product_id'] ?>"><?php echo $productrow['product_name']?></a>
                         <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5>Rs. 5,290</h5><h6 class="text-muted ml-2"><del>Rs. 15,990</del></h6>
+                            <h5>Rs. <?php echo $productrow['price']?></h5>
                         </div>
                                 <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small>67% off</small>
+                                    <small>10% off</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            
-                            <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/recent2.jpg" alt="">
-                    </div>
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="">Lenovo IdeaPad 3 11th Gen</a>
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5>Rs. 37,298</h5>
-                        </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    
-                                    <small>23% off</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/earbud2.jpg" alt="">
-                        <div class="product-action">
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
-                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-                    <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href="">Sony WF-C500</a>
-                        <div class="d-flex align-items-center justify-content-center mt-2">
-                            <h5>Rs. 4,989</h5>
-                        </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
 
-                                    <small>48% off</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
-                                
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">OnePlus 10R 5G</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>Rs. 32,999</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small>12% off</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
-                                
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">Fire-Boltt Phoenix Smart Watch</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>Rs. 1,799</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    
-                                    <small>25% off</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
-                                
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">Bose SoundLink Revolve (Series II)</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>Rs. 24,990</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    
-                                    <small>0% off</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
-                                
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">HyperX Cloud Core Wired Gaming Headset</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>Rs. 5,790</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    
-                                    <small>31% off</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/product-8.jpg" alt="">
-                                
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">Zebronics Zeb Smart Cam 100</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>Rs. 1,499</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
 
-                                    <small>40% off</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/product-9.jpg" alt="">
-                                
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">Apple 2021 iPad Pro</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>Rs. 1,39,000</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                
-                                    <small>14% off</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<?php
+                }
+
+?>
+
+
                     <div class="col-12">
                         <nav>
                           <ul class="pagination justify-content-center">

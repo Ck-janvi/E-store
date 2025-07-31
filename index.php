@@ -51,8 +51,8 @@
 ?>
 
     <!-- Featured Start -->
-    <div class="container-fluid pt-4 align-items-center">
-        <div class="row px-xl-5 pb-3 align-items-center">
+    <div class="container-fluid align-items-center">
+        <div class="row px-xl-5 align-items-center">
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 20px;">
                     <h1 class="fa fa-check text-skyblue m-0 mr-3"></h1>
@@ -168,10 +168,10 @@
 
 
     <!-- Offer Start -->
-    <div class="container-fluid mb-3">
-        <div class="row bg-light px-xl-5">
+    <div class="container-fluid">
+        <div class="row bg-secondary px-xl-5">
             <div class="col-lg-6">
-            <div class="product-offer mb-30" style="height: 330px;">
+            <div class="product-offer mb-15" style="height: 330px;">
                     <img class="img-fluid" src="img/offer-1.jpg" alt="">
                     <div class="offer-text">
                         <h3 class="text-white mb-3">Special Offer</h3>
@@ -181,7 +181,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="product-offer mb-30" style="height: 330px;">
+                <div class="product-offer mb-15" style="height: 330px;">
                     <img class="img-fluid" src="img/offer-2.jpg" alt="">
                     <div class="offer-text">
                     <h3 class="text-white mb-3">Festive Offer!</h3>

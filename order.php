@@ -41,11 +41,11 @@
     <article class="card">
         <header class="card-header"> My Orders</header>
         <div class="card-body">
-            <h6>Order Amount: Rs. 5494.00</h6>
-            <h6>Order ID: 05</h6>
+            <h6>Order No. 01</h6>
+            <h6>Order ID: 1D45345345435</h6>
             <article class="card">
                 <div class="card-body row">
-                    <div class="col"> <strong>Estimated Delivery by:</strong> <br>2 FEB 2023 </div>
+                    <div class="col"> <strong>Estimated Delivery by:</strong> <br>30 JAN 2023 </div>
                     <div class="col"> <strong>Shipping BY:</strong> <br> E-store, | <i class="fa fa-phone"></i> +91 978 972 6831 </div>
                     <div class="col"> <strong>Status:</strong> <br> Out For Delivery </div>
                     <div class="col"> <strong>Tracking ID:</strong> <br> BD045903594059 </div>
@@ -61,17 +61,25 @@
             <ul class="row">
                 <li class="col-md-4">
                     <figure class="itemside mb-3">
-                        <div class="aside"><img src="./img/earphone1.jpg" class="img-sm border"></div>
+                        <div class="aside"><img src="./img/myproduct5.jpeg" class="img-sm border"></div>
                         <figcaption class="info align-self-center">
-                            <p class="title">boAt BassHeads 122  x 1</p> <span class="text-muted">Rs. 499 </span>
+                            <p class="title">ASUS ROG Strix G15</p> <span class="text-muted">Rs. 1,15,000 </span>
                         </figcaption>
                     </figure>
                 </li>
                 <li class="col-md-4">
                     <figure class="itemside mb-3">
-                        <div class="aside"><img src="./img/earphone3.jpg" class="img-sm border"></div>
+                        <div class="aside"><img src="img/myproduct6.jpeg" class="img-sm border"></div>
                         <figcaption class="info align-self-center">
-                            <p class="title">boAt Airdopes 141  x 5</p> <span class="text-muted">Rs. 4995 </span>
+                            <p class="title">ASUS Vivobook 15 Core 15</p> <span class="text-muted">Rs. 33,990 </span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="col-md-4">
+                    <figure class="itemside mb-3">
+                        <div class="aside"><img src="img/myproduct7.jpeg" class="img-sm border"></div>
+                        <figcaption class="info align-self-center">
+                            <p class="title">OPPO K10 5G</p> <span class="text-muted">Rs. 20,999 </span>
                         </figcaption>
                     </figure>
                 </li>
