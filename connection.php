@@ -1,9 +1,15 @@
 <?php
-
-$host= "localhost";
-$user="root";
+$servername="localhost:3307";
+$username="root";
 $password="";
 $database="db_admin";
-$connection=mysqli_connect($host,$user,$password,$database);
+$conn= mysqli_connect($servername,$username,$password,$database);
 
+if(!$conn)
+{
+    die("Sorry! Database not Connected".mysqli_connect_error());
+}
+else{
+    echo "Connected";
+}
 ?>
